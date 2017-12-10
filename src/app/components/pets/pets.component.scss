@@ -1,0 +1,25 @@
+$background-colour: #ccc;
+
+.displayInfo {
+  text-align: center;
+  margin: 0 auto;
+  h3 {
+    background: $background-colour;
+    padding: 2%;
+    border-bottom: 1px solid rgba($background-colour, 0.2);
+  }
+  table, th, td {
+    border-bottom: 1px dotted rgba($background-colour, 0.8);
+    border-collapse: collapse;
+  }
+  table {
+    background: rgba($background-colour, 0.2);
+  }
+  tr th {
+    padding-bottom: 2%;
+    font-size: 1.5em;
+  }
+  tr td {
+    padding: 2%;
+  }
+}

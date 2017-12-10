@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Person } from '../../person';
 
 @Component({
   selector: 'app-pets',
   templateUrl: './pets.component.html',
-  styleUrls: ['./pets.component.css']
+  styleUrls: ['./pets.component.scss']
 })
 export class PetsComponent implements OnInit {
+
+  @Input() person: Person;
 
   constructor() { }
 
@@ -13,3 +17,4 @@ export class PetsComponent implements OnInit {
   }
 
 }
+
