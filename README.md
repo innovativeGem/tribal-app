@@ -31,17 +31,17 @@ $ ng build
 ### Accomplishment
 
 As per the project brief, i have achieved following 
-> Added a menu to list all people based on their gender.
-> When user selects a person, app lists down all their pets based on their type and name.
-> Added 2 child components namely Menu and Pets
-> Loaded Mock JSON data into my application.
-> Created a Service to load JSON data.
-> Make app responsive using SCSS and Bootstrap.
-> Unit tested my application without any errors.
-> I have taken few screenshots of my work and placed it in root assets directory
-([App Screenshot 1](./assets/tribal-app-screenshot-1.png), [App Screenshot 2](./assets/tribal-app-screenshot-2.png), [App Screenshot 3](./assets/tribal-app-screenshot-3.png), [App Screenshot 4](./assets/tribal-app-screenshot-4.png), [Karma Unit Tests](./localhost-9876--id=45421272.png))
+- Added a menu to list all people based on their gender.
+- When user selects a person, app lists down all their pets based on their type and name.
+- Added 2 child components namely Menu and Pets
+- Loaded Mock JSON data into my application.
+- Created a Service to load JSON data.
+- Make app responsive using SCSS and Bootstrap.
+- Unit tested my application without any errors.
+- I have taken few screenshots of my work and placed it in root assets directory
+([App Screenshot 1](../../assets/tribal-app-screenshot-1.png), [App Screenshot 2](../../assets/tribal-app-screenshot-2.png), [App Screenshot 3](../../assets/tribal-app-screenshot-3.png), [App Screenshot 4](../../assets/tribal-app-screenshot-4.png), [Karma Unit Tests](../../localhost-9876--id=45421272.png))
 
 ### Hick-up
-- Had to creat mocked JSON as linking to http://test.stage.tribalddbmelb.com.au/  showed an error saying 'No Access-Control-Allow-Origin' header ([Click here for error message](./assets/error-json.png)).
+- Had to creat mocked JSON as linking to http://test.stage.tribalddbmelb.com.au/  showed an error saying 'No Access-Control-Allow-Origin' header ([Click here for error message](../../assets/error-json.png)).
 ### Thank you!
  
