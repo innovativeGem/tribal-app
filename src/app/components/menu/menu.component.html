@@ -1,3 +1,20 @@
-<p>
-  menu works!
-</p>
+<mat-menu #rootMenu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="maleMenu">Males</button>
+  <button mat-menu-item [matMenuTriggerFor]="femaleMenu">Females</button>
+</mat-menu>
+
+<mat-menu #maleMenu="matMenu" (close)="sortByName(females)">
+  <button mat-menu-item *ngFor="let mp of males" [hidden]="mp.pets === null" (click)="personSelected(mp)">{{mp.name}}</button>
+</mat-menu>
+
+<mat-menu #femaleMenu="matMenu" (close)="sortByName(males)">
+  <button mat-menu-item *ngFor="let fp of females" [hidden]="fp.pets === null" (click)="personSelected(fp)">{{fp.name}}</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="rootMenu">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<div class="infoBox" [hidden]="isPersonSelected">
+  Please select a person from the hamburger menu to see their pets.
+</div>
