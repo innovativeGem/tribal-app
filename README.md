@@ -1,27 +1,47 @@
-# TribalApp
+# Tribal App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.0.
+Created an app to output a menu to select a person based on their gender and list down all their pets.
 
-## Development server
+### Tech
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* [Angular CLI](https://cli.angular.io/) - HTML enhanced for web apps!
+* [node.js](https://nodejs.org/en/) - fast node.js network app framework
+* [Twitter Bootstrap](https://v4-alpha.getbootstrap.com/getting-started/download/) - great UI boilerplate for modern web apps
+* [SCSS](http://sass-lang.com/install) - CSS preprocessor 
 
-## Code scaffolding
+### Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Open Terminal/Command prompt on your system.
 
-## Build
+Install the dependencies and devDependencies and start the server.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```sh
+$ git clone https://github.com/innovativeGem/tribal-app.git
+$ npm install
+$ ng serve
+```
 
-## Running unit tests
+For production environments...
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+$ ng build
+```
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Accomplishment
 
-## Further help
+As per the project brief, i have achieved following 
+> Added a menu to list all people based on their gender.
+> When user selects a person, app lists down all their pets based on their type and name.
+> Added 2 child components namely Menu and Pets
+> Loaded Mock JSON data into my application.
+> Created a Service to load JSON data.
+> Make app responsive using SCSS and Bootstrap.
+> Unit tested my application without any errors.
+> I have taken few screenshots of my work and placed it in root assets directory
+([App Screenshot 1](./assets/tribal-app-screenshot-1.png), [App Screenshot 2](./assets/tribal-app-screenshot-2.png), [App Screenshot 3](./assets/tribal-app-screenshot-3.png), [App Screenshot 4](./assets/tribal-app-screenshot-4.png), [Karma Unit Tests](./localhost-9876--id=45421272.png))
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Hick-up
+- Had to creat mocked JSON as linking to http://test.stage.tribalddbmelb.com.au/  showed an error saying 'No Access-Control-Allow-Origin' header ([Click here for error message](./assets/error-json.png)).
+### Thank you!
+ 
