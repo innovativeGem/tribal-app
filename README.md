@@ -39,7 +39,7 @@ As per the project brief, i have achieved following
 - Make app responsive using SCSS and Bootstrap.
 - Unit tested my application without any errors.
 - I have taken few screenshots of my work and placed it in root assets directory
-([App Screenshot 1](../../blob/master/src/assets/tribal-app-screenshot-1.png), [App Screenshot 2](../../blob/master/src/assets/tribal-app-screenshot-2.png), [App Screenshot 3](../../blob/master/src/assets/tribal-app-screenshot-3.png), [App Screenshot 4](../../blob/master/src/assets/tribal-app-screenshot-4.png), [Karma Unit Tests](../../blob/master/src/localhost-9876--id=45421272.png))
+([App Screenshot 1](../../blob/master/src/assets/tribal-app-screenshot-1.png), [App Screenshot 2](../../blob/master/src/assets/tribal-app-screenshot-2.png), [App Screenshot 3](../../blob/master/src/assets/tribal-app-screenshot-3.png), [App Screenshot 4](../../blob/master/src/assets/tribal-app-screenshot-4.png), [Karma Unit Tests](../../blob/master/src/tribal-test-screenshot.png))
 
 ### Hick-up
 - Had to creat mocked JSON as linking to http://test.stage.tribalddbmelb.com.au/  showed an error saying 'No Access-Control-Allow-Origin' header ([Click here for error message](../../blob/master/src/assets/error-json.png)).
