@@ -11,6 +11,7 @@ export class DataService {
   females = [];
 
   mypets: Pet[] = [];
+  petCategories: PetCategories[] = [];
 
   constructor(private http: Http) {
     this.displayPeople();
@@ -38,14 +39,40 @@ export class DataService {
   }
 
   getPets(person) {
+    var self = this;
     this.mypets = [];
+    this.petCategories = [];
+    var category = [];
+    var petNames = [];
     // console.log('person.pets: ' + person.pets);
-    person.pets.forEach(pet => {
+    person.pets.forEach((pet, i) => {
       this.mypets.push(pet);
+      // this.petCategories.push
+      console.log('this.mypets: ' , this.mypets);
+      if (category.indexOf(pet.type) === -1) {
+        category.push(pet.type);
+        // petNames.push(pet.name);
+      }
+      // console.log('this.petCategories: ' , this.petCategories);
     });
 
+    category.forEach((c, j) => {
+      category = [];
+      petNames = [];
+      this.mypets.forEach(pet => {
+        if(c === pet.type){
+          petNames.push(pet.name);
+        }
+      });
+      petNames.sort();
+      this.petCategories.push({type: c, names:petNames});
+    });
+
+    console.log('this.petCategories: ' , this.petCategories);
+
+    // this.petCategories.push({type: category, names:petNames});
+
     this.sortByName(this.mypets);
-    console.log('mypets: ' , this.mypets);
   }
 
   displayPeople() {
@@ -63,4 +90,9 @@ export class DataService {
     });
   }
 
+}
+
+interface PetCategories {
+  type: string;
+  names: any[];
 }

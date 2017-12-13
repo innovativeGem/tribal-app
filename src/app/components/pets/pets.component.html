@@ -6,9 +6,9 @@
         <th>Type</th>
         <th>Name</th>
     </tr>
-    <tr *ngFor="let pet of pets">
+    <tr *ngFor="let pet of categories">
       <td>{{pet.type}}</td>
-      <td>{{pet.name}}</td>
+      <td><span *ngFor="let name of pet.names">{{name}} </span></td>
     </tr>
   </table>
 </div>
