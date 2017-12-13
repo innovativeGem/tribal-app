@@ -3,11 +3,11 @@
   <button mat-menu-item [matMenuTriggerFor]="femaleMenu">Females</button>
 </mat-menu>
 
-<mat-menu #maleMenu="matMenu" (close)="sortByName(females)">
+<mat-menu #maleMenu="matMenu">
   <button mat-menu-item *ngFor="let mp of males" [hidden]="mp.pets === null" (click)="personSelected(mp)">{{mp.name}}</button>
 </mat-menu>
 
-<mat-menu #femaleMenu="matMenu" (close)="sortByName(males)">
+<mat-menu #femaleMenu="matMenu">
   <button mat-menu-item *ngFor="let fp of females" [hidden]="fp.pets === null" (click)="personSelected(fp)">{{fp.name}}</button>
 </mat-menu>
 

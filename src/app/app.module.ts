@@ -25,7 +25,7 @@ import { PetsComponent } from './components/pets/pets.component';
     MatMenuModule,
     MatIconModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
