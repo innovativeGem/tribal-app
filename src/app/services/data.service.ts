@@ -39,7 +39,6 @@ export class DataService {
   }
 
   getPets(person) {
-    const self = this;
     this.mypets = [];
     this.petCategories = [];
     let category = [];
