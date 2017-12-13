@@ -13,7 +13,6 @@ export class PetsComponent implements OnInit, OnChanges {
 
   @Input() person: Person;
 
-  pets: Pet[] = [];
   categories: any[] = [];
 
   constructor(private dataService: DataService) { }
@@ -22,8 +21,6 @@ export class PetsComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes) {
-    // this.pets = [];
-    this.pets = this.dataService.mypets;
     this.categories = this.dataService.petCategories;
   }
 

@@ -39,11 +39,11 @@ export class DataService {
   }
 
   getPets(person) {
-    var self = this;
+    const self = this;
     this.mypets = [];
     this.petCategories = [];
-    var category = [];
-    var petNames = [];
+    let category = [];
+    let petNames = [];
     // console.log('person.pets: ' + person.pets);
     person.pets.forEach((pet, i) => {
       this.mypets.push(pet);
@@ -53,26 +53,19 @@ export class DataService {
         category.push(pet.type);
         // petNames.push(pet.name);
       }
-      // console.log('this.petCategories: ' , this.petCategories);
     });
 
     category.forEach((c, j) => {
       category = [];
       petNames = [];
       this.mypets.forEach(pet => {
-        if(c === pet.type){
+        if (c === pet.type) {
           petNames.push(pet.name);
         }
       });
       petNames.sort();
-      this.petCategories.push({type: c, names:petNames});
+      this.petCategories.push({type: c, names: petNames});
     });
-
-    console.log('this.petCategories: ' , this.petCategories);
-
-    // this.petCategories.push({type: category, names:petNames});
-
-    this.sortByName(this.mypets);
   }
 
   displayPeople() {
