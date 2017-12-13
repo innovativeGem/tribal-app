@@ -38,13 +38,14 @@ export class DataService {
   }
 
   getPets(person) {
+    this.mypets = [];
     // console.log('person.pets: ' + person.pets);
     person.pets.forEach(pet => {
       this.mypets.push(pet);
     });
 
     this.sortByName(this.mypets);
-    console.log('mypets: ' , person.pets.length);
+    console.log('mypets: ' , this.mypets);
   }
 
   displayPeople() {

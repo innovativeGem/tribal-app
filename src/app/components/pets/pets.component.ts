@@ -18,11 +18,11 @@ export class PetsComponent implements OnInit, OnChanges {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.pets = this.dataService.mypets;
   }
 
   ngOnChanges(changes) {
     // this.pets = [];
+    this.pets = this.dataService.mypets;
   }
 
 
