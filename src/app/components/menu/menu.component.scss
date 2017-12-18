@@ -1,6 +1,13 @@
+
+$highlight-colour : #FFAC00;
+
 .infoBox {
   width: 60%;
   padding: 2%;
   margin: 0 auto;
   background: #ccc;
+}
+
+button[mat-icon-button]:hover {
+  color: $highlight-colour;
 }
